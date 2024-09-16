@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "FactoryMet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Singleton.csproj", "{937F364B-D6BB-4484-A5CC-6701043A50A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{BB480608-B644-4210-A098-B7AAD880159F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{2F44C9C3-292A-4AEB-A4E5-C2EAE9874EC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{937F364B-D6BB-4484-A5CC-6701043A50A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{937F364B-D6BB-4484-A5CC-6701043A50A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{937F364B-D6BB-4484-A5CC-6701043A50A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB480608-B644-4210-A098-B7AAD880159F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB480608-B644-4210-A098-B7AAD880159F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB480608-B644-4210-A098-B7AAD880159F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB480608-B644-4210-A098-B7AAD880159F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F44C9C3-292A-4AEB-A4E5-C2EAE9874EC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F44C9C3-292A-4AEB-A4E5-C2EAE9874EC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F44C9C3-292A-4AEB-A4E5-C2EAE9874EC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F44C9C3-292A-4AEB-A4E5-C2EAE9874EC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -2,9 +2,9 @@
 
 namespace FactoryMethod.Factories;
 
-public class CreditCardPaymentFactory : PaymentFactory
+public class CreditCardPaymentCreator : ICreator
 {
-    public override IPayment CreatePayment()
+    public IPayment CreatePayment()
     {
         return new CreditCardPayment();
     }

@@ -2,7 +2,24 @@
 
 namespace FactoryMethod.Factories;
 
-public abstract class PaymentFactory
+public class PaymentFactory
 {
-    public abstract IPayment CreatePayment();
+    public IPayment CreatePayment(Payment type)
+    {
+        ICreator creator;
+        
+        switch (type)
+        {
+            case Payment.CreditCard:
+                creator = new CreditCardPaymentCreator();
+                break;
+            case Payment.PayPal:
+                creator = new PayPalPaymentCreator();
+                break;
+            default:
+                throw new Exception("Необслуживаемый формат оплаты");
+        }
+
+        return creator.CreatePayment();
+    }
 }

@@ -2,9 +2,9 @@
 
 namespace FactoryMethod.Factories;
 
-public class PayPalPaymentFactory : PaymentFactory
+public class PayPalPaymentCreator : ICreator
 {
-    public override IPayment CreatePayment()
+    public IPayment CreatePayment()
     {
         return new PayPalPayment();
     }

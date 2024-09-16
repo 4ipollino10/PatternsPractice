@@ -2,14 +2,13 @@
 using FactoryMethod.Payments;
 
 var payments = new List<IPayment>();
-var payPalFactory = new PayPalPaymentFactory(); 
-var payPalPayment = payPalFactory.CreatePayment();
 
-var creditCardFactory = new CreditCardPaymentFactory(); 
-var creditCardPayment = creditCardFactory.CreatePayment();
+var paymentFactory = new PaymentFactory();
 
-payments.Add(payPalPayment);
-payments.Add(creditCardPayment);
+payments.Add(paymentFactory.CreatePayment(Payment.PayPal));
+payments.Add(paymentFactory.CreatePayment(Payment.CreditCard));
+payments.Add(paymentFactory.CreatePayment(Payment.PayPal));
+payments.Add(paymentFactory.CreatePayment(Payment.CreditCard));
 
 foreach (var payment in payments)
 {
